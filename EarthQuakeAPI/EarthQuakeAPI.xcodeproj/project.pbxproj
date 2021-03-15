@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F346A71AE037E4CB0C2D87E /* Pods_EarthQuakeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C94FA627A35B097F97B4057 /* Pods_EarthQuakeAPI.framework */; };
+		B7DFC755C214950364680C10 /* Pods_EarthQuakeAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08354D492FDA4AE14C497CF4 /* Pods_EarthQuakeAPITests.framework */; };
 		CE2646EE22719B9F00897874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2646ED22719B9F00897874 /* AppDelegate.swift */; };
 		CE2646F022719B9F00897874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2646EF22719B9F00897874 /* ViewController.swift */; };
 		CE2646F322719B9F00897874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2646F122719B9F00897874 /* Main.storyboard */; };
@@ -18,6 +20,17 @@
 		CE2647142271A26400897874 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2647132271A26400897874 /* CustomTableViewCell.swift */; };
 		CE2647162271AD4400897874 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2647152271AD4400897874 /* MasterTableViewController.swift */; };
 		CE2647182271B2D800897874 /* UrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2647172271B2D800897874 /* UrlFactory.swift */; };
+		CE4FA7DB25FB4A4300F375BB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4FA7DA25FB4A4300F375BB /* CustomTableViewCell.xib */; };
+		CE4FA7DE25FB4A9400F375BB /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7DD25FB4A9400F375BB /* BaseTableViewCell.swift */; };
+		CE4FA7E125FB4AB800F375BB /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7E025FB4AB800F375BB /* UIView.swift */; };
+		CE4FA7E325FB4ED000F375BB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7E225FB4ED000F375BB /* DataModel.swift */; };
+		CE4FA7E525FB4F2200F375BB /* SummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7E425FB4F2200F375BB /* SummaryModel.swift */; };
+		CE4FA7E725FB543600F375BB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7E625FB543600F375BB /* BaseViewController.swift */; };
+		CE4FA7E925FB5B7C00F375BB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7E825FB5B7C00F375BB /* String.swift */; };
+		CE4FA7EB25FB5E0300F375BB /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7EA25FB5E0300F375BB /* Int.swift */; };
+		CE4FA7ED25FB612400F375BB /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7EC25FB612400F375BB /* BaseNetwork.swift */; };
+		CE4FA7EF25FB617300F375BB /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7EE25FB617300F375BB /* URL.swift */; };
+		CE4FA7F125FB624B00F375BB /* EarthquakesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7F025FB624B00F375BB /* EarthquakesRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08354D492FDA4AE14C497CF4 /* Pods_EarthQuakeAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthQuakeAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A8CE668540E10C9FD9EED0 /* Pods-EarthQuakeAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAPITests.release.xcconfig"; path = "Target Support Files/Pods-EarthQuakeAPITests/Pods-EarthQuakeAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C94FA627A35B097F97B4057 /* Pods_EarthQuakeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthQuakeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B527B7E7EA9B1A5F9D4E5EA5 /* Pods-EarthQuakeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAPI.debug.xcconfig"; path = "Target Support Files/Pods-EarthQuakeAPI/Pods-EarthQuakeAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2646EA22719B9F00897874 /* EarthQuakeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuakeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2646ED22719B9F00897874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2646EF22719B9F00897874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +63,19 @@
 		CE2647132271A26400897874 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		CE2647152271AD4400897874 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		CE2647172271B2D800897874 /* UrlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlFactory.swift; sourceTree = "<group>"; };
+		CE4FA7DA25FB4A4300F375BB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		CE4FA7DD25FB4A9400F375BB /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		CE4FA7E025FB4AB800F375BB /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CE4FA7E225FB4ED000F375BB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		CE4FA7E425FB4F2200F375BB /* SummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryModel.swift; sourceTree = "<group>"; };
+		CE4FA7E625FB543600F375BB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE4FA7E825FB5B7C00F375BB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CE4FA7EA25FB5E0300F375BB /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		CE4FA7EC25FB612400F375BB /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		CE4FA7EE25FB617300F375BB /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		CE4FA7F025FB624B00F375BB /* EarthquakesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesRouter.swift; sourceTree = "<group>"; };
+		D90C663FDBF758FACFD4D11C /* Pods-EarthQuakeAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAPITests.debug.xcconfig"; path = "Target Support Files/Pods-EarthQuakeAPITests/Pods-EarthQuakeAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC58530325D2EE254BF0E79B /* Pods-EarthQuakeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAPI.release.xcconfig"; path = "Target Support Files/Pods-EarthQuakeAPI/Pods-EarthQuakeAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F346A71AE037E4CB0C2D87E /* Pods_EarthQuakeAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,18 +91,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DFC755C214950364680C10 /* Pods_EarthQuakeAPITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043F018E4270744504E3DB63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B527B7E7EA9B1A5F9D4E5EA5 /* Pods-EarthQuakeAPI.debug.xcconfig */,
+				DC58530325D2EE254BF0E79B /* Pods-EarthQuakeAPI.release.xcconfig */,
+				D90C663FDBF758FACFD4D11C /* Pods-EarthQuakeAPITests.debug.xcconfig */,
+				54A8CE668540E10C9FD9EED0 /* Pods-EarthQuakeAPITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		449D315334302D9C13D4ED84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C94FA627A35B097F97B4057 /* Pods_EarthQuakeAPI.framework */,
+				08354D492FDA4AE14C497CF4 /* Pods_EarthQuakeAPITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE2646E122719B9F00897874 = {
 			isa = PBXGroup;
 			children = (
 				CE2646EC22719B9F00897874 /* EarthQuakeAPI */,
 				CE26470122719BA200897874 /* EarthQuakeAPITests */,
 				CE2646EB22719B9F00897874 /* Products */,
+				043F018E4270744504E3DB63 /* Pods */,
+				449D315334302D9C13D4ED84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +144,9 @@
 				CE2646ED22719B9F00897874 /* AppDelegate.swift */,
 				CE2646EF22719B9F00897874 /* ViewController.swift */,
 				CE2647152271AD4400897874 /* MasterTableViewController.swift */,
-				CE2647132271A26400897874 /* CustomTableViewCell.swift */,
+				CE4FA7DF25FB4AA800F375BB /* Extension */,
+				CE4FA7DC25FB4A8000F375BB /* Base */,
+				CE4FA7D925FB4A3200F375BB /* CustomTableViewCell */,
 				CE26471022719FA300897874 /* Network */,
 				CE26470D22719BBA00897874 /* Model */,
 				CE2646F122719B9F00897874 /* Main.storyboard */,
@@ -114,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				CE26470E22719BCC00897874 /* Model.swift */,
+				CE4FA7E225FB4ED000F375BB /* DataModel.swift */,
+				CE4FA7E425FB4F2200F375BB /* SummaryModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -123,8 +181,39 @@
 			children = (
 				CE26471122719FBB00897874 /* DataService.swift */,
 				CE2647172271B2D800897874 /* UrlFactory.swift */,
+				CE4FA7EC25FB612400F375BB /* BaseNetwork.swift */,
+				CE4FA7F025FB624B00F375BB /* EarthquakesRouter.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CE4FA7D925FB4A3200F375BB /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE2647132271A26400897874 /* CustomTableViewCell.swift */,
+				CE4FA7DA25FB4A4300F375BB /* CustomTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE4FA7DC25FB4A8000F375BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE4FA7DD25FB4A9400F375BB /* BaseTableViewCell.swift */,
+				CE4FA7E625FB543600F375BB /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE4FA7DF25FB4AA800F375BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE4FA7E025FB4AB800F375BB /* UIView.swift */,
+				CE4FA7E825FB5B7C00F375BB /* String.swift */,
+				CE4FA7EA25FB5E0300F375BB /* Int.swift */,
+				CE4FA7EE25FB617300F375BB /* URL.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE26470722719BA200897874 /* Build configuration list for PBXNativeTarget "EarthQuakeAPI" */;
 			buildPhases = (
+				46175814E06FF912970850D0 /* [CP] Check Pods Manifest.lock */,
 				CE2646E622719B9F00897874 /* Sources */,
 				CE2646E722719B9F00897874 /* Frameworks */,
 				CE2646E822719B9F00897874 /* Resources */,
+				76A6B1BCB4447130F1FBA988 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE26470A22719BA200897874 /* Build configuration list for PBXNativeTarget "EarthQuakeAPITests" */;
 			buildPhases = (
+				A819FECFD3722E182BF45CEC /* [CP] Check Pods Manifest.lock */,
 				CE2646FA22719BA200897874 /* Sources */,
 				CE2646FB22719BA200897874 /* Frameworks */,
 				CE2646FC22719BA200897874 /* Resources */,
@@ -210,6 +302,7 @@
 			files = (
 				CE2646F822719BA200897874 /* LaunchScreen.storyboard in Resources */,
 				CE2646F522719BA200897874 /* Assets.xcassets in Resources */,
+				CE4FA7DB25FB4A4300F375BB /* CustomTableViewCell.xib in Resources */,
 				CE2646F322719B9F00897874 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,18 +316,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46175814E06FF912970850D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarthQuakeAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A6B1BCB4447130F1FBA988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EarthQuakeAPI/Pods-EarthQuakeAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EarthQuakeAPI/Pods-EarthQuakeAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EarthQuakeAPI/Pods-EarthQuakeAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A819FECFD3722E182BF45CEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarthQuakeAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE2646E622719B9F00897874 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4FA7DE25FB4A9400F375BB /* BaseTableViewCell.swift in Sources */,
+				CE4FA7E925FB5B7C00F375BB /* String.swift in Sources */,
 				CE26470F22719BCC00897874 /* Model.swift in Sources */,
+				CE4FA7EB25FB5E0300F375BB /* Int.swift in Sources */,
 				CE2647182271B2D800897874 /* UrlFactory.swift in Sources */,
 				CE2647162271AD4400897874 /* MasterTableViewController.swift in Sources */,
 				CE2647142271A26400897874 /* CustomTableViewCell.swift in Sources */,
+				CE4FA7EF25FB617300F375BB /* URL.swift in Sources */,
+				CE4FA7E725FB543600F375BB /* BaseViewController.swift in Sources */,
+				CE4FA7E325FB4ED000F375BB /* DataModel.swift in Sources */,
+				CE4FA7ED25FB612400F375BB /* BaseNetwork.swift in Sources */,
+				CE4FA7E525FB4F2200F375BB /* SummaryModel.swift in Sources */,
 				CE2646F022719B9F00897874 /* ViewController.swift in Sources */,
 				CE2646EE22719B9F00897874 /* AppDelegate.swift in Sources */,
+				CE4FA7E125FB4AB800F375BB /* UIView.swift in Sources */,
 				CE26471222719FBB00897874 /* DataService.swift in Sources */,
+				CE4FA7F125FB624B00F375BB /* EarthquakesRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,10 +561,12 @@
 		};
 		CE26470822719BA200897874 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B527B7E7EA9B1A5F9D4E5EA5 /* Pods-EarthQuakeAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarthQuakeAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,10 +580,12 @@
 		};
 		CE26470922719BA200897874 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC58530325D2EE254BF0E79B /* Pods-EarthQuakeAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarthQuakeAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,6 +599,7 @@
 		};
 		CE26470B22719BA200897874 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90C663FDBF758FACFD4D11C /* Pods-EarthQuakeAPITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +620,7 @@
 		};
 		CE26470C22719BA200897874 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A8CE668540E10C9FD9EED0 /* Pods-EarthQuakeAPITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
