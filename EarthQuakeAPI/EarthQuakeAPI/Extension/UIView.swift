@@ -10,6 +10,69 @@ import Foundation
 import UIKit
 
 extension UIView {
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.masksToBounds = newValue > 0
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    @IBInspectable
+    var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable
+    var borderColor: UIColor? {
+        get {
+            let color = UIColor.init(cgColor: layer.borderColor!)
+            return color
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
+    
+    @IBInspectable
+    var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.masksToBounds = false
+            layer.shadowColor = UIColor.darkGray.cgColor
+            layer.shadowOffset = CGSize(width: 0, height: 3)
+            layer.shadowOpacity = 0.2
+            layer.shadowRadius = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowRadiusOnlyBottom: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.masksToBounds = false
+            layer.shadowRadius = newValue
+            layer.shadowOpacity = 0.2
+            layer.shadowColor = UIColor.gray.cgColor
+            layer.shadowOffset = CGSize(width: 0 , height: 3)
+            layer.shadowPath = UIBezierPath(rect: CGRect(x: 0,
+                                                         y: bounds.maxY - layer.shadowRadius,
+                                                         width: bounds.width,
+                                                         height: layer.shadowRadius)).cgPath
+        }
+    }
     
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))

@@ -31,6 +31,19 @@
 		CE4FA7ED25FB612400F375BB /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7EC25FB612400F375BB /* BaseNetwork.swift */; };
 		CE4FA7EF25FB617300F375BB /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7EE25FB617300F375BB /* URL.swift */; };
 		CE4FA7F125FB624B00F375BB /* EarthquakesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7F025FB624B00F375BB /* EarthquakesRouter.swift */; };
+		FA6FC8A22A4AD65700DC3CF6 /* PlayfairDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8962A4AD65600DC3CF6 /* PlayfairDisplay-BlackItalic.ttf */; };
+		FA6FC8A32A4AD65700DC3CF6 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8972A4AD65600DC3CF6 /* PlayfairDisplay-Bold.ttf */; };
+		FA6FC8A42A4AD65700DC3CF6 /* PlayfairDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8982A4AD65600DC3CF6 /* PlayfairDisplay-MediumItalic.ttf */; };
+		FA6FC8A52A4AD65700DC3CF6 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8992A4AD65600DC3CF6 /* PlayfairDisplay-Regular.ttf */; };
+		FA6FC8A62A4AD65700DC3CF6 /* PlayfairDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC89A2A4AD65600DC3CF6 /* PlayfairDisplay-SemiBold.ttf */; };
+		FA6FC8A72A4AD65700DC3CF6 /* PlayfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC89B2A4AD65600DC3CF6 /* PlayfairDisplay-Black.ttf */; };
+		FA6FC8A82A4AD65700DC3CF6 /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC89C2A4AD65600DC3CF6 /* PlayfairDisplay-BoldItalic.ttf */; };
+		FA6FC8A92A4AD65700DC3CF6 /* PlayfairDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC89D2A4AD65600DC3CF6 /* PlayfairDisplay-Medium.ttf */; };
+		FA6FC8AA2A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC89E2A4AD65600DC3CF6 /* PlayfairDisplay-ExtraBoldItalic.ttf */; };
+		FA6FC8AB2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC89F2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf */; };
+		FA6FC8AC2A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8A02A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf */; };
+		FA6FC8AD2A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8A12A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf */; };
+		FA6FC8AF2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FC8AE2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +89,19 @@
 		CE4FA7F025FB624B00F375BB /* EarthquakesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesRouter.swift; sourceTree = "<group>"; };
 		D90C663FDBF758FACFD4D11C /* Pods-EarthQuakeAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAPITests.debug.xcconfig"; path = "Target Support Files/Pods-EarthQuakeAPITests/Pods-EarthQuakeAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC58530325D2EE254BF0E79B /* Pods-EarthQuakeAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAPI.release.xcconfig"; path = "Target Support Files/Pods-EarthQuakeAPI/Pods-EarthQuakeAPI.release.xcconfig"; sourceTree = "<group>"; };
+		FA6FC8962A4AD65600DC3CF6 /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		FA6FC8972A4AD65600DC3CF6 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		FA6FC8982A4AD65600DC3CF6 /* PlayfairDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FA6FC8992A4AD65600DC3CF6 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		FA6FC89A2A4AD65600DC3CF6 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA6FC89B2A4AD65600DC3CF6 /* PlayfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		FA6FC89C2A4AD65600DC3CF6 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FA6FC89D2A4AD65600DC3CF6 /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		FA6FC89E2A4AD65600DC3CF6 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		FA6FC89F2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		FA6FC8A02A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		FA6FC8A12A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FA6FC8AE2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +167,7 @@
 		CE2646EC22719B9F00897874 /* EarthQuakeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FA6FC8942A4AD61500DC3CF6 /* Resources */,
 				CE2646ED22719B9F00897874 /* AppDelegate.swift */,
 				CE2646EF22719B9F00897874 /* ViewController.swift */,
 				CE2647152271AD4400897874 /* MasterTableViewController.swift */,
@@ -153,6 +180,7 @@
 				CE2646F422719BA200897874 /* Assets.xcassets */,
 				CE2646F622719BA200897874 /* LaunchScreen.storyboard */,
 				CE2646F922719BA200897874 /* Info.plist */,
+				FA6FC8AE2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift */,
 			);
 			path = EarthQuakeAPI;
 			sourceTree = "<group>";
@@ -214,6 +242,33 @@
 				CE4FA7EE25FB617300F375BB /* URL.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FA6FC8942A4AD61500DC3CF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FC8952A4AD63A00DC3CF6 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA6FC8952A4AD63A00DC3CF6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FC89B2A4AD65600DC3CF6 /* PlayfairDisplay-Black.ttf */,
+				FA6FC8962A4AD65600DC3CF6 /* PlayfairDisplay-BlackItalic.ttf */,
+				FA6FC8972A4AD65600DC3CF6 /* PlayfairDisplay-Bold.ttf */,
+				FA6FC89C2A4AD65600DC3CF6 /* PlayfairDisplay-BoldItalic.ttf */,
+				FA6FC8A12A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf */,
+				FA6FC89E2A4AD65600DC3CF6 /* PlayfairDisplay-ExtraBoldItalic.ttf */,
+				FA6FC8A02A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf */,
+				FA6FC89D2A4AD65600DC3CF6 /* PlayfairDisplay-Medium.ttf */,
+				FA6FC8982A4AD65600DC3CF6 /* PlayfairDisplay-MediumItalic.ttf */,
+				FA6FC8992A4AD65600DC3CF6 /* PlayfairDisplay-Regular.ttf */,
+				FA6FC89A2A4AD65600DC3CF6 /* PlayfairDisplay-SemiBold.ttf */,
+				FA6FC89F2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,10 +355,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6FC8AC2A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf in Resources */,
+				FA6FC8AB2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
+				FA6FC8A32A4AD65700DC3CF6 /* PlayfairDisplay-Bold.ttf in Resources */,
+				FA6FC8A42A4AD65700DC3CF6 /* PlayfairDisplay-MediumItalic.ttf in Resources */,
 				CE2646F822719BA200897874 /* LaunchScreen.storyboard in Resources */,
+				FA6FC8A22A4AD65700DC3CF6 /* PlayfairDisplay-BlackItalic.ttf in Resources */,
+				FA6FC8A52A4AD65700DC3CF6 /* PlayfairDisplay-Regular.ttf in Resources */,
 				CE2646F522719BA200897874 /* Assets.xcassets in Resources */,
 				CE4FA7DB25FB4A4300F375BB /* CustomTableViewCell.xib in Resources */,
+				FA6FC8AD2A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf in Resources */,
+				FA6FC8AA2A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
+				FA6FC8A72A4AD65700DC3CF6 /* PlayfairDisplay-Black.ttf in Resources */,
 				CE2646F322719B9F00897874 /* Main.storyboard in Resources */,
+				FA6FC8A82A4AD65700DC3CF6 /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				FA6FC8A92A4AD65700DC3CF6 /* PlayfairDisplay-Medium.ttf in Resources */,
+				FA6FC8A62A4AD65700DC3CF6 /* PlayfairDisplay-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +462,7 @@
 				CE4FA7EF25FB617300F375BB /* URL.swift in Sources */,
 				CE4FA7E725FB543600F375BB /* BaseViewController.swift in Sources */,
 				CE4FA7E325FB4ED000F375BB /* DataModel.swift in Sources */,
+				FA6FC8AF2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift in Sources */,
 				CE4FA7ED25FB612400F375BB /* BaseNetwork.swift in Sources */,
 				CE4FA7E525FB4F2200F375BB /* SummaryModel.swift in Sources */,
 				CE2646F022719B9F00897874 /* ViewController.swift in Sources */,

@@ -52,13 +52,15 @@ class FeaturesModel: BaseDataModel {
 }
 
 class PropertiesModel: BaseDataModel {
-    var mag: String?
+    var mag: Double?
     var place: String?
-    var time: String?
+    var time: Int?
+    var detail: String?
     
     override func mapping(json: JSON) {
-        mag = json["mag"].stringValue
+        mag = json["mag"].doubleValue
         place = json["place"].stringValue
-        time = json["time"].stringValue
+        time = json["time"].intValue
+        detail = json["detail"].stringValue
     }
 }
