@@ -18,7 +18,6 @@
 		CE26470F22719BCC00897874 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26470E22719BCC00897874 /* Model.swift */; };
 		CE26471222719FBB00897874 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26471122719FBB00897874 /* DataService.swift */; };
 		CE2647142271A26400897874 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2647132271A26400897874 /* CustomTableViewCell.swift */; };
-		CE2647162271AD4400897874 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2647152271AD4400897874 /* MasterTableViewController.swift */; };
 		CE2647182271B2D800897874 /* UrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2647172271B2D800897874 /* UrlFactory.swift */; };
 		CE4FA7DB25FB4A4300F375BB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4FA7DA25FB4A4300F375BB /* CustomTableViewCell.xib */; };
 		CE4FA7DE25FB4A9400F375BB /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FA7DD25FB4A9400F375BB /* BaseTableViewCell.swift */; };
@@ -43,7 +42,14 @@
 		FA6FC8AB2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC89F2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf */; };
 		FA6FC8AC2A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8A02A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf */; };
 		FA6FC8AD2A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6FC8A12A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf */; };
-		FA6FC8AF2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FC8AE2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift */; };
+		FADD5C862A4C27F9002A63DB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD5C852A4C27F9002A63DB /* SearchView.swift */; };
+		FADD5C882A4C2B72002A63DB /* Data+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD5C872A4C2B72002A63DB /* Data+Extention.swift */; };
+		FADD5C8C2A4C2BBC002A63DB /* EarthquakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD5C8B2A4C2BBC002A63DB /* EarthquakeDetailViewController.swift */; };
+		FADD5C8E2A4C2BEC002A63DB /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD5C8D2A4C2BEC002A63DB /* MasterTableViewController.swift */; };
+		FADD5C902A4C2F09002A63DB /* blue_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = FADD5C8F2A4C2F08002A63DB /* blue_loading.json */; };
+		FADD5C922A4C2FDB002A63DB /* AnimationLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD5C912A4C2FDB002A63DB /* AnimationLoadingViewController.swift */; };
+		FADD5C952A4C3E1C002A63DB /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADD5C942A4C3E1C002A63DB /* SearchView.xib */; };
+		FADD5C972A4C412E002A63DB /* DateHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD5C962A4C412E002A63DB /* DateHandlerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +80,6 @@
 		CE26470E22719BCC00897874 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CE26471122719FBB00897874 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		CE2647132271A26400897874 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		CE2647152271AD4400897874 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		CE2647172271B2D800897874 /* UrlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlFactory.swift; sourceTree = "<group>"; };
 		CE4FA7DA25FB4A4300F375BB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		CE4FA7DD25FB4A9400F375BB /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -101,7 +106,14 @@
 		FA6FC89F2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		FA6FC8A02A4AD65700DC3CF6 /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
 		FA6FC8A12A4AD65700DC3CF6 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
-		FA6FC8AE2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDetailViewController.swift; sourceTree = "<group>"; };
+		FADD5C852A4C27F9002A63DB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FADD5C872A4C2B72002A63DB /* Data+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extention.swift"; sourceTree = "<group>"; };
+		FADD5C8B2A4C2BBC002A63DB /* EarthquakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeDetailViewController.swift; sourceTree = "<group>"; };
+		FADD5C8D2A4C2BEC002A63DB /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		FADD5C8F2A4C2F08002A63DB /* blue_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blue_loading.json; sourceTree = "<group>"; };
+		FADD5C912A4C2FDB002A63DB /* AnimationLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLoadingViewController.swift; sourceTree = "<group>"; };
+		FADD5C942A4C3E1C002A63DB /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		FADD5C962A4C412E002A63DB /* DateHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHandlerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +179,10 @@
 		CE2646EC22719B9F00897874 /* EarthQuakeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FADD5C892A4C2B96002A63DB /* Modules */,
 				FA6FC8942A4AD61500DC3CF6 /* Resources */,
 				CE2646ED22719B9F00897874 /* AppDelegate.swift */,
 				CE2646EF22719B9F00897874 /* ViewController.swift */,
-				CE2647152271AD4400897874 /* MasterTableViewController.swift */,
 				CE4FA7DF25FB4AA800F375BB /* Extension */,
 				CE4FA7DC25FB4A8000F375BB /* Base */,
 				CE4FA7D925FB4A3200F375BB /* CustomTableViewCell */,
@@ -180,7 +192,6 @@
 				CE2646F422719BA200897874 /* Assets.xcassets */,
 				CE2646F622719BA200897874 /* LaunchScreen.storyboard */,
 				CE2646F922719BA200897874 /* Info.plist */,
-				FA6FC8AE2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift */,
 			);
 			path = EarthQuakeAPI;
 			sourceTree = "<group>";
@@ -229,6 +240,8 @@
 			children = (
 				CE4FA7DD25FB4A9400F375BB /* BaseTableViewCell.swift */,
 				CE4FA7E625FB543600F375BB /* BaseViewController.swift */,
+				FADD5C932A4C3E14002A63DB /* SearchView */,
+				FADD5C912A4C2FDB002A63DB /* AnimationLoadingViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -240,6 +253,7 @@
 				CE4FA7E825FB5B7C00F375BB /* String.swift */,
 				CE4FA7EA25FB5E0300F375BB /* Int.swift */,
 				CE4FA7EE25FB617300F375BB /* URL.swift */,
+				FADD5C872A4C2B72002A63DB /* Data+Extention.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -247,6 +261,7 @@
 		FA6FC8942A4AD61500DC3CF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FADD5C8F2A4C2F08002A63DB /* blue_loading.json */,
 				FA6FC8952A4AD63A00DC3CF6 /* Fonts */,
 			);
 			path = Resources;
@@ -269,6 +284,33 @@
 				FA6FC89F2A4AD65700DC3CF6 /* PlayfairDisplay-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FADD5C892A4C2B96002A63DB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FADD5C8A2A4C2B9E002A63DB /* Controller */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FADD5C8A2A4C2B9E002A63DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FADD5C8B2A4C2BBC002A63DB /* EarthquakeDetailViewController.swift */,
+				FADD5C8D2A4C2BEC002A63DB /* MasterTableViewController.swift */,
+				FADD5C962A4C412E002A63DB /* DateHandlerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FADD5C932A4C3E14002A63DB /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				FADD5C852A4C27F9002A63DB /* SearchView.swift */,
+				FADD5C942A4C3E1C002A63DB /* SearchView.xib */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,7 +411,9 @@
 				FA6FC8A72A4AD65700DC3CF6 /* PlayfairDisplay-Black.ttf in Resources */,
 				CE2646F322719B9F00897874 /* Main.storyboard in Resources */,
 				FA6FC8A82A4AD65700DC3CF6 /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				FADD5C952A4C3E1C002A63DB /* SearchView.xib in Resources */,
 				FA6FC8A92A4AD65700DC3CF6 /* PlayfairDisplay-Medium.ttf in Resources */,
+				FADD5C902A4C2F09002A63DB /* blue_loading.json in Resources */,
 				FA6FC8A62A4AD65700DC3CF6 /* PlayfairDisplay-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,21 +497,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4FA7DE25FB4A9400F375BB /* BaseTableViewCell.swift in Sources */,
+				FADD5C862A4C27F9002A63DB /* SearchView.swift in Sources */,
 				CE4FA7E925FB5B7C00F375BB /* String.swift in Sources */,
 				CE26470F22719BCC00897874 /* Model.swift in Sources */,
 				CE4FA7EB25FB5E0300F375BB /* Int.swift in Sources */,
 				CE2647182271B2D800897874 /* UrlFactory.swift in Sources */,
-				CE2647162271AD4400897874 /* MasterTableViewController.swift in Sources */,
 				CE2647142271A26400897874 /* CustomTableViewCell.swift in Sources */,
 				CE4FA7EF25FB617300F375BB /* URL.swift in Sources */,
 				CE4FA7E725FB543600F375BB /* BaseViewController.swift in Sources */,
+				FADD5C882A4C2B72002A63DB /* Data+Extention.swift in Sources */,
 				CE4FA7E325FB4ED000F375BB /* DataModel.swift in Sources */,
-				FA6FC8AF2A4AE3C500DC3CF6 /* EarthquakeDetailViewController.swift in Sources */,
+				FADD5C972A4C412E002A63DB /* DateHandlerViewController.swift in Sources */,
 				CE4FA7ED25FB612400F375BB /* BaseNetwork.swift in Sources */,
+				FADD5C8E2A4C2BEC002A63DB /* MasterTableViewController.swift in Sources */,
 				CE4FA7E525FB4F2200F375BB /* SummaryModel.swift in Sources */,
 				CE2646F022719B9F00897874 /* ViewController.swift in Sources */,
+				FADD5C8C2A4C2BBC002A63DB /* EarthquakeDetailViewController.swift in Sources */,
 				CE2646EE22719B9F00897874 /* AppDelegate.swift in Sources */,
 				CE4FA7E125FB4AB800F375BB /* UIView.swift in Sources */,
+				FADD5C922A4C2FDB002A63DB /* AnimationLoadingViewController.swift in Sources */,
 				CE26471222719FBB00897874 /* DataService.swift in Sources */,
 				CE4FA7F125FB624B00F375BB /* EarthquakesRouter.swift in Sources */,
 			);
@@ -634,7 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarthQuakeAPI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -653,7 +701,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarthQuakeAPI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

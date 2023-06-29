@@ -15,4 +15,8 @@ extension String {
         }
         return 0
     }
+    
+    func unaccent() -> String {
+        return self.folding(options: .diacriticInsensitive, locale: .current)
+    }
 }

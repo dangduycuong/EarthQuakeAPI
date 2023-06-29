@@ -20,9 +20,6 @@ class DataService  {
         let downloadTask = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             if let data = data {
                 if let json = try? JSON(data: data) {
-                    
-                    
-                    
                     print("---- response: ", json)
                     DispatchQueue.main.async {
                         completedHandle(json)

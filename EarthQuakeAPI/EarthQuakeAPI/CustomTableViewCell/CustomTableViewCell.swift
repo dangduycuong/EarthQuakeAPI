@@ -47,6 +47,9 @@ class CustomTableViewCell: BaseTableViewCell {
     func fillData(mag: Double?, place: String?, time: Int?, keyWord: String?) {
         magLabel.text = mag?.toString()
         placeLabel.text = place
+        if let time = time {
+            convertTime(time: time)
+        }
         
         guard let name = place, let keyWord = keyWord else {
             return
@@ -56,10 +59,6 @@ class CustomTableViewCell: BaseTableViewCell {
             setColorTextLabel(string: name, range: range)
         } else {
             placeLabel.text = name
-        }
-        
-        if let time = time {
-            convertTime(time: time)
         }
     }
     

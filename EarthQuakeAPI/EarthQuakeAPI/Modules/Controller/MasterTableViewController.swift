@@ -12,6 +12,10 @@ import SwiftyJSON
 class MasterTableViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    private lazy var searchView: UIView = {
+        let view: SearchView = SearchView.loadFromNib()
+        return view
+    }()
     
     var totalErathQuake: EarthQuakeService?
     var totalErathQuakeDto: SummaryModel?
@@ -27,11 +31,16 @@ class MasterTableViewController: UIViewController {
         searchBar.delegate = self
         tableView.register(CustomTableViewCell.nib(), forCellReuseIdentifier: CustomTableViewCell.identifier())
         setDataFromAPI()
+        if let searchView = searchView as? SearchView {
+            searchView.textChange = { text in
+                self.search(searchText: text)
+            }
+        }
     }
     
     private func setupUI() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.titleView = searchBar
+        navigationItem.titleView = searchView
         if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
             let attributes: [NSAttributedString.Key: Any] = [
                 .foregroundColor: UIColor.gray,
@@ -39,9 +48,26 @@ class MasterTableViewController: UIViewController {
             ]
             let atrString = NSAttributedString(string: "Search using keywords", attributes: attributes)
             textfield.attributedPlaceholder = atrString
-            textfield.font = UIFont(name: "PlayfairDisplay-Regular", size: 17)
+            //            textfield.font = UIFont(name: "PlayfairDisplay-Regular", size: 17)
+            let defaultTextAttributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont(name: "PlayfairDisplay-Regular", size: 17) as Any,
+            ]
+            //            textfield.defaultTextAttributes = defaultTextAttributes
         }
         navigationController?.navigationBar.tintColor = .black
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.layoutIfNeeded()
+        
+        if #available(iOS 15, *) {
+            let navBarAppearance = UINavigationBarAppearance()
+            navBarAppearance.configureWithOpaqueBackground()
+            navBarAppearance.shadowColor = .clear
+            navBarAppearance.shadowImage = UIImage()
+            navigationController?.navigationBar.standardAppearance = navBarAppearance
+            navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+        }
     }
     
     // MARK: - Table view data source
@@ -67,6 +93,7 @@ extension MasterTableViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier(), for: indexPath) as! CustomTableViewCell
+        
         cell.fillData(mag: features[indexPath.row].properties?.mag, place: features[indexPath.row].properties?.place, time: features[indexPath.row].properties?.time, keyWord: keyWord)
         return cell
     }
@@ -97,11 +124,5 @@ extension MasterTableViewController: UISearchBarDelegate {
             return false
         }
         tableView.reloadData()
-    }
-}
-
-extension String {
-    func unaccent() -> String {
-        return self.folding(options: .diacriticInsensitive, locale: .current)
     }
 }

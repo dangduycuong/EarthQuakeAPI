@@ -1,35 +1,10 @@
 //
-//  EarthquakeDetailViewController.swift
+//  Data+Extention.swift
 //  EarthQuakeAPI
 //
-//  Created by cuongdd on 27/06/2023.
+//  Created by cuongdd on 28/06/2023.
 //  Copyright © 2023 duycuong. All rights reserved.
 //
-
-import UIKit
-
-class EarthquakeDetailViewController: UIViewController {
-    
-    var detail: String?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        loadData()
-    }
-    
-    private func loadData() {
-        guard let detail = detail else { return }
-        guard let url = URL(string: detail) else { return }
-        let request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
-        let sesstion = URLSession.shared
-        let dataTask = sesstion.dataTask(with: request) { (data, response, error) in
-            data?.printFormatedJSON()
-        }
-        dataTask.resume()
-    }
-    
-}
 
 import Foundation
 
