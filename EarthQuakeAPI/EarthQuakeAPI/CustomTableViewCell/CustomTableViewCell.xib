@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +26,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-lX-hT0">
-                        <rect key="frame" x="8" y="4" width="359" height="84"/>
+                        <rect key="frame" x="16" y="4" width="343" height="84"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-Ia-xJ9">
                                 <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
@@ -86,8 +86,8 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="tAZ-lX-hT0" secondAttribute="trailing" constant="8" id="C1o-Tj-aQM"/>
-                    <constraint firstItem="tAZ-lX-hT0" firstAttribute="leading" secondItem="X9n-2B-v2b" secondAttribute="leading" constant="8" id="iPu-pi-uUc"/>
+                    <constraint firstAttribute="trailing" secondItem="tAZ-lX-hT0" secondAttribute="trailing" constant="16" id="C1o-Tj-aQM"/>
+                    <constraint firstItem="tAZ-lX-hT0" firstAttribute="leading" secondItem="X9n-2B-v2b" secondAttribute="leading" constant="16" id="iPu-pi-uUc"/>
                     <constraint firstAttribute="bottom" secondItem="tAZ-lX-hT0" secondAttribute="bottom" constant="4" id="rn5-0l-Gig"/>
                     <constraint firstItem="tAZ-lX-hT0" firstAttribute="top" secondItem="X9n-2B-v2b" secondAttribute="top" constant="4" id="wzf-8U-7Bh"/>
                 </constraints>

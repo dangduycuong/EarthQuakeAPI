@@ -7,8 +7,140 @@
 //
 
 import UIKit
+import Material
+
+import UIKit
+
+enum PlayfairDisplay: String {
+    case black = "PlayfairDisplay-Black"
+    case blackItalic = "PlayfairDisplay-BlackItalic"
+    case bold = "PlayfairDisplay-Bold"
+    case boldItalic = "PlayfairDisplay-BoldItalic"
+    
+    case extraBold = "PlayfairDisplay-ExtraBold"
+    case extraBoldItalic = "PlayfairDisplay-ExtraBoldItalic"
+    case italic = "PlayfairDisplay-Italic"
+    case medium = "PlayfairDisplay-Medium"
+    
+    case mediumItalic = "PlayfairDisplay-MediumItalic"
+    case regular = "PlayfairDisplay-Regular"
+    case semiBold = "PlayfairDisplay-SemiBold"
+    case semiBoldItalic = "PlayfairDisplay-SemiBoldItalic"
+}
+
+public extension UIFont {
+    
+    static var black: UIFont {
+        return UIFont(name: PlayfairDisplay.black.rawValue, size: 20)!
+    }
+    
+    static var blackItalic: UIFont {
+        return UIFont(name: PlayfairDisplay.blackItalic.rawValue, size: 20)!
+    }
+    
+    static var bold: UIFont {
+        return UIFont(name: PlayfairDisplay.bold.rawValue, size: 20)!
+    }
+    
+    static var boldItalic: UIFont {
+        return UIFont(name: PlayfairDisplay.boldItalic.rawValue, size: 20)!
+    }
+    
+    static var extraBold: UIFont {
+        return UIFont(name: PlayfairDisplay.extraBold.rawValue, size: 20)!
+    }
+    
+    static var extraBoldItalic: UIFont {
+        return UIFont(name: PlayfairDisplay.extraBoldItalic.rawValue, size: 20)!
+    }
+    
+    static var italic: UIFont {
+        return UIFont(name: PlayfairDisplay.italic.rawValue, size: 20)!
+    }
+    
+    static var medium: UIFont {
+        return UIFont(name: PlayfairDisplay.medium.rawValue, size: 20)!
+    }
+    
+    static var mediumItalic: UIFont {
+        return UIFont(name: PlayfairDisplay.mediumItalic.rawValue, size: 20)!
+    }
+    
+    static var regular: UIFont {
+        return UIFont(name: PlayfairDisplay.regular.rawValue, size: 20)!
+    }
+    
+    static var semiBold: UIFont {
+        return UIFont(name: PlayfairDisplay.semiBold.rawValue, size: 20)!
+    }
+    
+    static var semiBoldItalic: UIFont {
+        return UIFont(name: PlayfairDisplay.semiBoldItalic.rawValue, size: 20)!
+    }
+}
 
 class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.bold
+        return label
+    }()
+    
+    lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.searchBarStyle = .minimal
+        searchBar.searchTextField.font = UIFont.medium
+        
+        return searchBar
+    }()
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.showsVerticalScrollIndicator = false
+        tableView.keyboardDismissMode = .onDrag
+        tableView.separatorStyle = .none
+        
+        return tableView
+    }()
+    lazy var backButton: UIButton = {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+        
+        return button
+    }()
+    
+    override func loadView() {
+        super.loadView()
+        view.backgroundColor = UIColor.white
+    }
+    
+    func addBackButton() {
+        let image = UIImage(systemName: "chevron.backward")?.withRenderingMode(.alwaysTemplate)
+        let imageView = UIImageView(image: image)
+        imageView.tintColor = UIColor.black
+        
+        view.layout(backButton)
+            .topSafe()
+            .left(8)
+            .width(40).height(48)
+        
+        backButton.layout(imageView)
+            .center()
+            .width(24)
+            .height(32)
+    }
+    
+    func addTitle(_ title: String?) {
+        view.layout(titleLabel)
+            .topSafe()
+            .centerX()
+            .height(48)
+        titleLabel.text = title
+    }
+    
+    @objc func backButtonTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
     
     var spinner = UIActivityIndicatorView()
 //    let alertService = AlertService()

@@ -17,6 +17,8 @@ class MasterTableViewController: UIViewController {
         return view
     }()
     
+    let passwordField = PasswordTextField()
+    
     var totalErathQuake: EarthQuakeService?
     var totalErathQuakeDto: SummaryModel?
     var features = [FeaturesModel]()
@@ -36,6 +38,19 @@ class MasterTableViewController: UIViewController {
                 self.search(searchText: text)
             }
         }
+        
+        passwordField.placeholder = "Enter Password"
+        passwordField.borderStyle = .roundedRect
+        passwordField.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(passwordField)
+        
+        NSLayoutConstraint.activate([
+            passwordField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            passwordField.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            passwordField.widthAnchor.constraint(equalToConstant: 250),
+            passwordField.heightAnchor.constraint(equalToConstant: 44)
+        ])
+        
     }
     
     private func setupUI() {
@@ -72,15 +87,17 @@ class MasterTableViewController: UIViewController {
     
     // MARK: - Table view data source
     func setDataFromAPI() {
-        DataService.shared.getEarthQuakeAPI() { (json) in
-            //            self.totalErathQuake = earthQuakeService
-            self.totalErathQuakeDto = SummaryModel(byJSON: json)
-            if let features = self.totalErathQuakeDto?.features {
-                self.features = features
-                self.sourceList = features
-                self.tableView.reloadData()
-            }
-        }
+        let target = QuakeEndPoint.getListEarthQuake
+        APIClient.shared.getData(with: target) { json in}
+//        DataService.shared.getEarthQuakeAPI() { (json) in
+//            //            self.totalErathQuake = earthQuakeService
+//            self.totalErathQuakeDto = SummaryModel(byJSON: json)
+//            if let features = self.totalErathQuakeDto?.features {
+//                self.features = features
+//                self.sourceList = features
+//                self.tableView.reloadData()
+//            }
+//        }
     }
     
 }

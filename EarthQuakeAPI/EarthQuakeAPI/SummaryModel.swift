@@ -44,10 +44,14 @@ class MetadataModel: BaseDataModel {
 class FeaturesModel: BaseDataModel {
     var type: String?
     var properties: PropertiesModel?
+    var id: String?
+    var geometry: GeometryModel?
     
     override func mapping(json: JSON) {
         type = json["type"].stringValue
         properties = PropertiesModel(byJSON: json["properties"])
+        id = json["id"].string
+        geometry = GeometryModel(byJSON: json["geometry"])
     }
 }
 
@@ -56,11 +60,37 @@ class PropertiesModel: BaseDataModel {
     var place: String?
     var time: Int?
     var detail: String?
+    var title: String?
+    var products: ProductsModel?
     
     override func mapping(json: JSON) {
-        mag = json["mag"].doubleValue
+        mag = json["mag"].double
         place = json["place"].stringValue
         time = json["time"].intValue
         detail = json["detail"].stringValue
+        title = json["title"].string
+        products = ProductsModel(byJSON: json["products"])
     }
+}
+
+class GeometryModel: BaseDataModel {
+    var coordinates: [Double]?
+    override func mapping(json: JSON) {
+        self.coordinates = json["coordinates"].arrayValue.map { $0.doubleValue }
+    }
+}
+
+class ProductsModel: BaseDataModel {
+    var origin: [OriginModel]?
+    override func mapping(json: JSON) {
+        origin = [OriginModel](byJSON: json["origin"])
+    }
+}
+
+class OriginModel: BaseDataModel {
+    var depth: String?
+    override func mapping(json: JSON) {
+        depth = json["properties"]["depth"].string
+    }
+    
 }

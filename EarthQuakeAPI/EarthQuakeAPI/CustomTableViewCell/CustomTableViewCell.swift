@@ -25,23 +25,21 @@ class CustomTableViewCell: BaseTableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func fillData() {
-//        magLabel.text = data.properties?.mag
-//        placeLabel.text = data.properties?.place
+    func fillData(data: FeaturesModel) {
+        magLabel.text = data.properties?.mag?.toString()
+        placeLabel.text = data.properties?.place
 //
 //
 //        let width = magView.bounds.width
 //        magView.layer.cornerRadius = width / 2
 //
-//        if let time = data.properties?.time?.toInt() {
-//            let epochTime = TimeInterval(time) / 1000
-//            let date = Date(timeIntervalSince1970: epochTime)   // "Apr 16, 2015, 2:40 AM"
-//
-//            print("Converted Time \(date)")
-//            let dateFormatter = DateFormatter()
-//            dateFormatter.dateFormat = "dd - MM - yyyy | HH : mm : ss z"
-//            timeLabel.text = dateFormatter.string(from: date)
-//        }
+        if let time = data.properties?.time {
+            let epochTime = TimeInterval(time) / 1000
+            let date = Date(timeIntervalSince1970: epochTime)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd - MM - yyyy | HH : mm : ss z"
+            timeLabel.text = dateFormatter.string(from: date)
+        }
     }
     
     func fillData(mag: Double?, place: String?, time: Int?, keyWord: String?) {
